@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LuasFragment"
+    android:background="@android:color/holo_green_light">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AREA CALCULATOR"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Owner"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp"/>
+    <Button
+        android:id="@+id/btn_square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SQUARE"
+        android:layout_marginTop="100dp"
+        android:layout_alignRight="@+id/btn_triangle"
+        android:layout_marginRight="140dp"
+        android:textSize="18dp"
+        />
+    <Button
+        android:id="@+id/btn_triangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRIANGLE"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        />
+
+    <Button
+        android:id="@+id/btn_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CIRCLE"
+        android:layout_marginTop="100dp"
+        android:layout_alignLeft="@+id/btn_triangle"
+        android:layout_marginLeft="140dp"
+        android:textSize="18dp"
+        />
+
+    <!--SQUARE!-->
+
+    <ImageView
+        android:id="@+id/pict_square"
+        android:layout_width="700px"
+        android:layout_height="700px"
+        android:src="@drawable/ic_baseline_crop_square_24"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        />
+    <EditText
+        android:id="@+id/edit_SquareSide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert Sides"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <Button
+        android:id="@+id/btn_submitSquare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        />
+
+    <TextView
+        android:id="@+id/txtHasilSquare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:textColor="@color/purple_200"
+        android:textSize="30dp"
+        android:layout_marginTop="550dp"/>
+
+    <!--TRIANGLE!-->
+
+    <ImageView
+        android:id="@+id/pict_triangle"
+        android:layout_width="700px"
+        android:layout_height="700px"
+        android:src="@drawable/triangle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        />
+    <EditText
+        android:id="@+id/edit_TriangleAlas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert Base"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="220dp"/>
+
+    <EditText
+        android:id="@+id/edit_TriangleTinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert Height"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/btn_submitTriangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        />
+
+    <TextView
+        android:id="@+id/txtHasiltriangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:textColor="@color/purple_200"
+        android:textSize="30dp"
+        android:layout_marginTop="550dp"/>
+
+    <!--Circle!-->
+
+    <ImageView
+        android:id="@+id/pict_circle"
+        android:layout_width="700px"
+        android:layout_height="700px"
+        android:src="@drawable/circle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        />
+    <EditText
+        android:id="@+id/edit_CircleRadius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert Radius"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/btn_submitCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        />
+
+    <TextView
+        android:id="@+id/txtHasilCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:textColor="@color/purple_200"
+        android:textSize="30dp"
+        android:layout_marginTop="550dp"/>
+</RelativeLayout>
